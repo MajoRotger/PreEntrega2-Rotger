@@ -162,11 +162,11 @@ footer{
 
 @media screen and (max-width: 480px) {
     header div img{
-        width: 150%;
+        width: 100%;
     }
 
     header div p{
-        font-size: 10px;
+        width: 100%;
     }
 
     .productos{
