@@ -174,24 +174,16 @@ footer{
         grid-template-rows: repeat(5, 1fr);
     }
 
-    .producto {
-        width: 100%; /* Ocupa todo el ancho disponible */
-        margin-bottom: 20px; /* Espacio entre los productos */
-        padding: 10px; /* Añade un poco de espacio interno */
-        border: 1px solid #ccc; /* Agrega un borde para una mejor separación */
-        border-radius: 5px; /* Redondea los bordes */
-        box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
-      }
-    
-      .producto img {
+      
+    .producto img {
         width: 100%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
         border-radius: 5px; /* Redondea los bordes de la imagen */
-      }
+    }
     
-      .producto p {
+    .producto p {
         font-size: 14px; /* Reduce el tamaño del texto */
         margin-top: 10px; /* Añade espacio superior al texto */
-      }
+    }
 
     .item{
         text-align: justify;
