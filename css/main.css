@@ -161,10 +161,14 @@ footer{
 /*mq de mobile*/
 
 @media screen and (max-width: 499px) {
-    header div p{
-        font-size: 10px;
+    header div img{
         width: 100%;
     }
+    
+    header div p{
+        font-size: 10px;
+    }
+
     .productos{
         width: 80%;
         grid-template-columns: repeat(1, 1fr);
