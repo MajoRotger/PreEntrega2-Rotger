@@ -170,10 +170,6 @@ footer{
         grid-template-rows: repeat(5, 1fr);
     }
 
-    .producto{
-        border: none;
-    }
-
     .producto img{
         width: 90%;
     }
