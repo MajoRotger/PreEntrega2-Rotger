@@ -192,11 +192,5 @@ footer{
     .item img{
         width: 90%;
     }
-
-    .item p{
-        display: flex;
-        align-items: center;
-    }
-
 }
 
