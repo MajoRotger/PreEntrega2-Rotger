@@ -179,15 +179,15 @@ footer{
         justify-content: center;
     }
 
-
     .item{
         text-align: justify;
-        margin: 25px;
+        margin: 15px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 70%);
+        grid-template-rows: repeat(2, 1fr);
         gap: 15px;
         justify-content: center;
+        align-items: center;
     }
 
 }
