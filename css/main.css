@@ -171,7 +171,8 @@ footer{
     }
 
     .producto{
-        width: 50%;
+        width: 70%;
+        align-items: center;
         justify-content: center;
     }
 
