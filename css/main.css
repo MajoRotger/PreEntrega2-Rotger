@@ -170,11 +170,15 @@ footer{
         grid-template-rows: repeat(5, 1fr);
     }
 
-    .producto{
+    .producto img{
         width: 90%;
-        /*display: block;
-        align-items: center;*/
     }
+
+    .producto p{
+        display: flex;
+        justify-content: center;
+    }
+
 
     .item{
         text-align: justify;
