@@ -172,8 +172,8 @@ footer{
 
     .producto{
         width: 90%;
-        display: block;
-        align-items: center;
+        /*display: block;
+        align-items: center;*/
     }
 
     .item{
