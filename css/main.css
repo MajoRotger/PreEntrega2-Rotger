@@ -84,14 +84,14 @@ main{
 
 .productos{
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
     grid-gap: 20px;
   }
   
   .producto{
     border: 1px solid #ccc;
     margin: 20px;
-    /*padding: 20px;*/
+    padding: 20px;
     text-align:center;
   }
 
@@ -166,9 +166,12 @@ footer{
         width: 100%;
     }
     .productos{
-        margin: 10px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(5, 1fr);
+    }
+
+    .producto{
+        width: 50%;
     }
 
     .item{
