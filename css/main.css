@@ -160,17 +160,17 @@ footer{
 
 /*mq de mobile*/
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 480px) {
     header div img{
-        width: 100%;
+        width: 150%;
     }
-    
+
     header div p{
         font-size: 10px;
     }
 
     .productos{
-        width: 80%;
+        
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(5, 1fr);
     }
