@@ -16,6 +16,7 @@ header div img{
 
 header div p{
     font-size: 20px;
+    width: 100%;
 }
 
 header div p span{
@@ -160,8 +161,12 @@ footer{
 /*mq de mobile*/
 
 @media screen and (max-width: 499px) {
-    
+    header div p{
+        font-size: 10px;
+        width: 100%;
+    }
     .productos{
+        width: 80%;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(5, 1fr);
     }
