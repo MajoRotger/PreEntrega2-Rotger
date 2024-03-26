@@ -190,5 +190,14 @@ footer{
         align-items: center;
     }
 
+    .item img{
+        width: 90%;
+    }
+
+    .item p{
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
