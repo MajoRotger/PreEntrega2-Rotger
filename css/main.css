@@ -149,7 +149,7 @@ footer{
 
 /*mq de tablet*/
 
-@media only screen and (min-width: 600px) and (max-width: 1024px){
+@media only screen and (min-width: 500px) and (max-width: 1024px){
     .productos{
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(3, 1fr);
@@ -159,7 +159,7 @@ footer{
 
 /*mq de mobile*/
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 499px) {
     
     .productos{
         grid-template-columns: repeat(1, 1fr);
