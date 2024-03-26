@@ -187,7 +187,6 @@ footer{
         grid-template-rows: repeat(2, 1fr);
         gap: 15px;
         justify-content: center;
-        align-items: center;
     }
 
     .item img{
@@ -196,7 +195,7 @@ footer{
 
     .item p{
         display: flex;
-        justify-content: center;
+        align-items: center;
     }
 
 }
