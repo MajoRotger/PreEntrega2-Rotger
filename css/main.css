@@ -172,6 +172,7 @@ footer{
 
     .producto{
         width: 50%;
+        justify-content: center;
     }
 
     .item{
