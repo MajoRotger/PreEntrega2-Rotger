@@ -1,0 +1,10 @@
+@mixin flex($justify-content){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:$justify-content;
+}
+
+@mixin nav-effect{
+    color: whitesmoke;
+    background-color: $color-bagues;
+} 
