@@ -11,7 +11,7 @@ header{
     box-shadow: 0px 5px silver;
     div {
         img {
-          width: 15px;
+          width: 50%;
           height: auto;
         }
     
@@ -44,6 +44,7 @@ header{
     .navbar-brand {
         &:hover {
             @include nav-effect;
+            background-color: $color-bagues-hover; 
         }
     
         &.active {
@@ -53,20 +54,26 @@ header{
     }
     
     .navbar-nav {
-        .nav-item {
-          .nav-link {
+        .nav-item {  
+            .nav-link {
                 &:hover {
                     @include nav-effect;
+                    background-color: $color-bagues-hover; 
                 }
         
                 &.active {
                     @include nav-effect;
                     font-style: italic;
-                }
-            }   
+                } 
+            }
+            .oculto{
+                visibility: hidden;
+            }
         }
     }
 }
+
+
 
 /*estilos de main*/
 .contenedor {
@@ -76,14 +83,31 @@ header{
     div{
         img{
             @media screen and (max-width: 480px){
+                padding: 0px 15px;
                 width: 100%;
                 height: 100%;
             }
         }
     }
     .parrafos {
-        margin: 0px 50px 150px;
+        margin: 0px $margen-parrafos $margen-parrafos;
         @include flex(left);
+        span{
+            font-weight: bold;
+        }
+        @media screen and (max-width: 480px){
+            margin: 5px 20px;
+            text-align: center;
+        }
+        
+    }
+    .whatsapp-link{
+        @media screen and (max-width: 480px){
+            position: static;
+            width: 50%;
+            height: 50%;
+        }
+        @include whatsapp(150px,50px);
     }
 }
   
@@ -97,13 +121,26 @@ main {
         }
       }
     }
+    
 }  
+
+.prox{
+    p {
+        font-size: 50px;
+        font-weight: bold;
+        padding: 10px 50px 250px;
+        @media screen and (max-width: 480px){
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}
 
 .productos {
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
     grid-gap: 20px;
-    @media only screen and (min-width: 500px) and (max-width: 1024px){
+    @media only screen and (min-width: 481px) and (max-width: 1024px){
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(3, 1fr);
     }
@@ -120,7 +157,9 @@ main {
         margin: 20px;
         text-align: center;
         overflow: hidden; /* Evita que las descripciones sobresalgan */
-
+        @media screen and (max-width: 480px){
+            width: 90%;
+        }
         img {
             width: 80%;
             height: 50%;
@@ -132,6 +171,10 @@ main {
         .descripcion{
             padding: 10px;
             margin-top: 10px;
+            a{
+                text-decoration: none;
+                color: black;
+            }
             @media screen and (max-width: 480px){
                 justify-content: center;
             }
@@ -150,19 +193,34 @@ main {
     display: flex;
     align-items: flex-start;
     @media screen and (max-width: 480px){
-        text-align: justify;
-        margin: 15px;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 15px;
-        justify-content: center;
+        @include parrafos-effect;
+    }
+    @media only screen and (min-width: 481px) and (max-width: 1024px){
+        @include parrafos-effect;
     }
     img {
         margin-right: 30px;
         @media screen and (max-width: 480px){
             width: 90%;
+            margin: 10px;
         }
+        @media only screen and (min-width: 481px) and (max-width: 1024px){
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    div{
+        margin: 50px;
+        @include flex(left);
+        @media screen and (max-width: 480px){
+            margin: 0px 10px;
+        }
+    }
+    .whatsapp-link{
+        @media screen and (max-width: 480px){
+            background-color: transparent;
+        }
+        @include whatsapp(30px,5px);   
     }
 }
     
@@ -172,16 +230,31 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
+    .boton-enviar {
+        background-color: $color-bagues; 
+        border: none; 
+        color: white; 
+        padding: 15px 32px; /* Relleno (arriba/abajo, izquierda/derecha) */
+        text-align: center; /* Alineación del texto */
+        text-decoration: none; 
+        display: inline-block; /* Mostrar como bloque en línea */
+        font-size: 16px; 
+        margin: 4px 2px; /* Márgenes (arriba/abajo, izquierda/derecha) */
+        cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+        border-radius: 8px; /* Borde redondeado */
+        width: 120px; /* Ancho del botón */
+      }
+      
 }
 
 /*estilos de section*/
 section {
-    margin: 0px 150px;
     @include flex(space-evenly);
     align-items: center;
   
     div {
         img {
+            padding: 10px;
             width: 100%;
             height: 100%;
             border: solid $color-bagues;
@@ -189,14 +262,26 @@ section {
                 width: auto;
                 height: auto;
             }
-            @media only screen and (min-width: 500px) and (max-width: 1024px){
+            @media only screen and (min-width: 481px) and (max-width: 1024px){
                 width: 600px;
                 height: 100%;
             }
         }
-        p {
-            border: solid $color-bagues;
+        a{
+            text-decoration: none;
+            text-align: center;
         }
+        p {
+            border: 20px solid $color-bagues;
+            background-color: $color-bagues;
+            color: whitesmoke ;
+            font-weight: bold;
+            text-align: center;
+            @media screen and (max-width: 480px){
+               
+            }
+        }
+        
     }
   }
 
