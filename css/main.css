@@ -193,6 +193,14 @@ main div p span {
     justify-content: center;
   }
 }
+.productos .producto .descripcion button {
+  background-color: #FF3F72;
+  color: #ffffff;
+  border: 1px solid #FF3F72;
+  padding: 10px 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
 
 .container {
   display: flex;

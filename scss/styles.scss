@@ -178,9 +178,21 @@ main {
             @media screen and (max-width: 480px){
                 justify-content: center;
             }
+            button{
+                // Establecer colores
+                background-color: $color-bagues;
+                color: #ffffff;
+                border: 1px solid $color-bagues;
+
+                // Establecer tamaño y espaciado
+                padding: 10px 10px;
+                font-size: 16px;
+                text-transform: uppercase;
+
+            }
         }
     }
-}
+}   
   
 .container {
     @include flex(flex-start);
