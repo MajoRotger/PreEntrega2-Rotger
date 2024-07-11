@@ -1,6 +1,7 @@
 const containerCartProducts = document.getElementsByClassName("container-cart-products")
 
 const cartInfo = document.querySelector(".cart-product")
+
 const rowProduct = document.querySelector('.row')
 
 const productsList = document.querySelector(".productos")
@@ -101,7 +102,6 @@ function showCart(){
             </div>
             
         `
-
        rowProduct.append(containerProduct)
        
        totalQty = totalQty + parseInt(product.quantity * product.price)    
